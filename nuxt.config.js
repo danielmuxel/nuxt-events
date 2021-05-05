@@ -1,3 +1,5 @@
+import EventService from './services/EventService.js'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -47,5 +49,15 @@ export default {
   loading: {
     color: '#39b982',
     height: '5px',
+  },
+
+  generate: {
+    routes: () => {
+      return EventService.getEvents().then((response) => {
+        return response.data.map((event) => {
+          return '/event/' + event.id
+        })
+      })
+    },
   },
 }

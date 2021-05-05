@@ -42,4 +42,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Progress bar yay
+  loading: {
+    color: '#39b982',
+    height: '5px',
+  },
 }

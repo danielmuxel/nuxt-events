@@ -19,7 +19,7 @@ $ npm run start
 $ npm run generate
 ```
 
-```
+```bash
 # use json-server as the api
 $ npm install -g json-server
 

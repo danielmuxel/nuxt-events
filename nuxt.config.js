@@ -43,13 +43,22 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    babel: {
+      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+    },
+  },
 
-  // Progress bar yay
+  // progress bar yaaaaay
   loading: {
     color: '#39b982',
-    height: '5px',
+    height: '10px',
   },
+  // disabled progress bar
+  // loading: {
+  //   color: '#fff',
+  //   height: '0px',
+  // },
 
   generate: {
     routes: () => {

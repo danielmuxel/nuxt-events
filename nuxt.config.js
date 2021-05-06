@@ -59,6 +59,9 @@ export default {
   //   color: '#fff',
   //   height: '0px',
   // },
+  server: {
+    port: 3001, // default 3000
+  },
 
   generate: {
     routes: () => {
